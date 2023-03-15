@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SideHustle Task 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function myFunction() {
+        alert("The form was submitted");
+      }
+      </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">SideHustle</h1>
+      <form action="/action_page.php" onsubmit="myFunction()">
+        <div class="user-info">
+          <div class="input-box">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter Full Name"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter email"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label for="phoneNumber">Phone Number</label>
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              placeholder="08012234567"
+              required
+            />
+          </div>
+
+          <div class="gender-details-box">
+            <span class="gender-title">Gender</span>
+              <div class="gender-category">
+                  <label for="male">Male</label>
+                  <input type="radio" name="gender" id="male">
+
+                  <label for="female">Female</label>
+                  <input type="radio" name="gender" id="female">
+              </div>
+          </div>
+
+          <div class="input-box">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter Password"
+              required
+            />
+          </div>
+
+        </div>
+
+          <div class="form-submit-btn">
+            <input type="submit">
+          </div>
+
+       
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
